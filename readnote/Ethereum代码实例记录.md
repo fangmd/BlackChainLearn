@@ -94,24 +94,14 @@ brew install ethereum
 
 # 遇到的问题
 
-## 0
 
-```
-ERROR: for netstats  Cannot start service netstats: Mounts denied:
-The path /etc/localtime
-is not shared from OS X and is not known to Docker.
-You can configure shared paths from Docker -> Preferences... -> File Sharing.
-See https://docs.docker.com/docker-for-mac/osxfs/#namespaces for more info.
-.
-```
 
-在 File Sharing 中添加 `/etc/localtime`
+待看：
 
-```
-ERROR: for netstats  Cannot start service netstats: error while creating mount source path '/etc/localtime': mkdir /etc/localtime: file exists
-```
+- [Ethereum入门：搭建私有链开发环境](https://zhuanlan.zhihu.com/p/26648454)
 
-docker run -it -v /etc/localtime:/etc/localtime:ro hello-world
+
+
 
 参考：
 
