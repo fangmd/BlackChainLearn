@@ -13,7 +13,7 @@ sudo docker pull ubuntu
 
 sudo docker save -o ubuntu_image.docker ubuntu
 
-sudo docker load ubuntu_image.docker
+sudo docker load < ubuntu_image.docker
 ```
 
 
@@ -419,7 +419,7 @@ logging:
 driver: "json-file"
 driver: "syslog"
 driver: "none"
-```    
+```
 
 options 配置日志驱动的相关参数:
 
